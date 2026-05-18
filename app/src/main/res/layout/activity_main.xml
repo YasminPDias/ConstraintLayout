@@ -8,12 +8,11 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <ImageView
+    <View
         android:id="@+id/imgHeader"
         android:layout_width="0dp"
         android:layout_height="220dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/android_header"
+        android:background="#78C257"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
