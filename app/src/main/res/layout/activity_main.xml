@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/android_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBlogPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BLOG POST"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/imgHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSerie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SERIE"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnBlogPost"
+        app:layout_constraintStart_toStartOf="@id/btnBlogPost"
+        app:layout_constraintEnd_toEndOf="@id/btnBlogPost" />
+
+    <Button
+        android:id="@+id/btnConcurso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CONCURSO DE TEXTOS"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnSerie"
+        app:layout_constraintStart_toStartOf="@id/btnSerie"
+        app:layout_constraintEnd_toEndOf="@id/btnSerie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
