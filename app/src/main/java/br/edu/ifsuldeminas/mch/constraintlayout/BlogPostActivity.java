@@ -12,14 +12,11 @@ public class BlogPostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog_post);
 
-        // Encontra a setinha de voltar do XML
         ImageView btnVoltar = findViewById(R.id.btnVoltarBlog);
-
-        // Configura o clique para fechar a tela
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Fecha o Blog e volta para a MainActivity
+                finish();
             }
         });
     }

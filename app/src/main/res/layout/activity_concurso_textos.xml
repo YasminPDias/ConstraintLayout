@@ -8,20 +8,45 @@
     android:background="#FFFFFF"
     tools:context=".ConcursoTextosActivity">
 
-    <TextView
-        android:id="@+id/txtHeaderConcurso"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarCustomConcurso"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:background="#6200EE"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:text="Constraint Layout Atividade 3"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/btnVoltarConcurso"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_drop_down"
+            android:rotation="90"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/txtHeaderConcurso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Constraint Layout Atividade 3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnVoltarConcurso"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/txtConcursoTitle"
@@ -32,7 +57,7 @@
         android:textStyle="bold"
         android:textColor="#222222"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/txtHeaderConcurso"
+        app:layout_constraintTop_toBottomOf="@id/toolbarCustomConcurso"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

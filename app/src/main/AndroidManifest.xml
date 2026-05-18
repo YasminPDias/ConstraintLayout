@@ -23,18 +23,15 @@
 
         <activity
             android:name=".BlogPostActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false" />
 
         <activity
             android:name=".SerieActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false" />
 
         <activity
             android:name=".ConcursoTextosActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false" />
 
     </application>
 
