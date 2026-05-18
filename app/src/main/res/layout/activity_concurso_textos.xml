@@ -5,9 +5,23 @@
     xmlns:tools="http://tools.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="#FFFFFF"
     tools:context=".ConcursoTextosActivity">
+
+    <TextView
+        android:id="@+id/txtHeaderConcurso"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#6200EE"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="Constraint Layout Atividade 3"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtConcursoTitle"
@@ -17,7 +31,8 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#222222"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtHeaderConcurso"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -26,8 +41,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
-        android:text="Texto Esquerda:\nMorbi in ultrices orci, porttitor tempus ex. Etiam ac posuere est, vitae venenatis turpis. Curabitur nibh est, tempus non."
+        android:text="Morbi in ultrices\norci,\nporttitor tempus ex.\nEtiam ac posuere\nest,\nvitae venenatis turpis.\nCurabitur\nnibh\nest,\ntempus non bibendum\nnon, euismod vel lectus\nEtiam vel accumsan ex,\nsit amet posuere diam.\nAliquam posuere pretium\ntellus eget vestibulum.\nNam aliquet et ligula a\nelementum. Etiam id mi ut\nligula accumsan finibus."
         android:textColor="#444444"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/txtConcursoTitle"
@@ -39,7 +55,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Texto Direita:\nLoren ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum a nunc quis condimentum. Fusce interdum ex sed egestas consequat. Nulla hendrerit gravida ultrices. Sed accumsan orci tristique, cursus est sed, porta ligula. Vestibulum dapibus sollicitudin."
+        android:layout_marginEnd="16dp"
+        android:text="Loren\nipsum dolor\nsit amet, consectetur\nadipiscing elit. Nam\ninterdum a nunc quis\ncondimentum. Fusce\ninterdum ex sed egestas\nconsequat.\nNulla hendrerit\ngravida ultrices Sed\naccumsan orci tristique,\ncursus est sed, porta\nligula\nVestibulum\nsollicitudin\ndapibus\nmollis."
         android:textColor="#444444"
         android:textSize="14sp"
         app:layout_constraintTop_toTopOf="@id/txtTextLeft"
